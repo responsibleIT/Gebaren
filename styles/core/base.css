@@ -1,0 +1,108 @@
+/* CSS Reset - Zorgt ervoor dat alles vanaf hetzelfde punt begint */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: unset;
+  list-style: none;
+  line-height: 1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* Basis element stijlen */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(var(--spacing-xs), 3vw, var(--spacing-lg));
+  background: var(--blue);
+  font-family: var(--secondary);
+  color: var(--green);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+/* Typografie */
+h1, h2, h3 {
+  font-family: var(--primary-bold);
+}
+
+h4, h5, h6 {
+  font-family: var(--primary-regular);
+}
+
+/* Formulier elementen */
+select,
+::picker(select) {
+  appearance: base-select;
+}
+
+select {
+  padding: 0.75rem 1.25rem;
+  display: flex;
+  align-items: center;
+  background: var(--green);
+  color: var(--blue);
+  border: var(--blue) 0.125rem solid;
+}
+
+/* SVG stijlen */
+svg * {
+  height: 100%;
+  width: 100%;
+}
+
+svg,
+svg * {
+  fill: var(--shape-color);
+  transition: fill 0.2s ease;
+}
+
+selectedContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  gap: .5rem;
+}
+
+selectedContent svg {
+  height: 3rem;
+  aspect-ratio: 1/1;
+  fill: var(--blue);
+}
+
+a[download] {
+  background: var(--green);
+  color: var(--blue);
+  text-decoration: underline;
+  display: inline;
+  width: fit-content;
+  padding: .5rem;
+  border: 2px solid transparent;
+  transition: 0.2s ease;
+}
+
+a[download]:hover {
+  color: var(--green);
+  background: var(--blue);
+  text-decoration: underline;
+  border: 2px solid var(--white);
+}
+
+/* Media queries */
+@media (min-width: 760px) {
+  body {
+    padding: var(--spacing-lg);
+    max-width: 90vw;
+    margin: 0 auto;
+  }
+} 

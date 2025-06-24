@@ -1,0 +1,65 @@
+/* Animaties voor visuele effecten */
+
+/* Hiermee controleer je of de gebruiker de animaties wil zien */
+@media (prefers-reduced-motion: no-preference) {
+    
+  @keyframes scanline {
+    0% {
+      transform: translate3d(0, 200000%, 0);
+    }
+  }
+
+  @keyframes scanlines {
+    0% {
+      background-position: 0 50%;
+    }
+  }
+
+  @keyframes scrolling {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes pulse {
+    0% {
+      background: var(--blue);
+    }
+    50% {
+      background: rgb(111, 111, 244);
+    }
+    100% {
+      background: var(--blue);
+    }
+  }
+
+  @keyframes fade-out {
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+/* Overgangen */
+.overlay {
+  transition: opacity var(--transition-speed) ease, visibility var(--transition-speed) ease;
+  animation: pulse var(--animation-speed) infinite;
+}
+
+main svg {
+  transition: scale 0.2s ease;
+}
+
+label.add {
+  animation: fade-in 0.15s ease-out forwards;
+}
+
+label.remove {
+  animation: fade-out 0.3s ease-out forwards;
+} 

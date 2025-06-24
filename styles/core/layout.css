@@ -1,0 +1,148 @@
+/* Kern layout stijlen - Deze behouden de structuur van de app */
+
+/* Hoofdcanvas gebied */
+main {
+  --x: var(--initial-x);
+  --y: var(--initial-y);
+  --scale: var(--initial-scale);
+  --rotate: var(--initial-rotate);
+  --shape-color: var(--green);
+  position: relative;
+  flex-grow: 1;
+  border: 0.125rem solid var(--green);
+  overflow: hidden;
+}
+
+@supports (overflow: clip) {
+  main {
+    overflow: clip;
+  }
+}
+
+/* Achtergrond effect */
+main::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background: url("../../assets/images/galaxy.avif");
+  animation: scrolling 20s linear infinite;
+  width: 200%;
+  height: 100%;
+  image-rendering: pixelated;
+  transform: translate3d(0px, 0px, 0.1px);
+}
+
+/* Vorm positionering */
+main svg {
+  transform: translate(var(--x), var(--y)) 
+    scale(var(--scale))
+    rotate(var(--rotate));
+  position: absolute;
+  top: 0;
+  left: 0;
+  view-transition-name: image;
+  transform-origin: center;
+}
+
+/* Formulier layout */
+form {
+  background: var(--purple);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  margin: 0 auto;
+  padding: var(--spacing-md) var(--spacing-xs);
+  border-radius: var(--border-radius);
+  height: 12.5rem;
+  color: var(--blue);
+}
+
+form > label {
+  display: none;
+}
+
+form > label,
+form > fieldset {
+  font-size: 1.25rem;
+}
+
+fieldset label {
+  font-size: initial;
+}
+
+/* Voorbeeldweergave sectie */
+section {
+  position: fixed;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  background: var(--blue);
+  padding: var(--spacing-xs);
+  border: 0.125rem solid var(--green);
+  border-radius: var(--border-radius);
+  color: var(--green);
+  font-family: var(--primary-regular);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 18rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+section.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+section h2 {
+  font-size: var(--spacing-sm);
+}
+
+section p {
+  font-size: 1.125rem;
+}
+
+section p:last-child {
+  margin-top: 0.5rem;
+  font-family: var(--primary-bold);
+  font-size: var(--spacing-xs);
+}
+
+/* Laadscherm overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.overlay::after {
+  content: "Bouw je wereld...";
+}
+
+/* Hulpklassen */
+video,
+canvas {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 6rem;
+} 

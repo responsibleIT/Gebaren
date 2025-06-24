@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/stylesheet.css" />
+    <link rel="icon" href="assets/images/lux.png" />
+    <script type="module" src="scripts/gestureControl.js"></script>
+    <script type="module" src="scripts/nonGestureControl.js"></script>
+    <title>Lux</title>
+  </head>
+  <body>
+    <h1>Lux</h1>
+    <header>
+      <!-- Formulier voor vormen en sterren -->
+      <form>
+        <fieldset>
+          <legend>Selecteer wat je wilt weergeven!</legend>
+
+          <label for="vormen"
+            >Vormen
+            <input type="radio" id="vormen" name="weergave" value="vorm" />
+          </label>
+          <label for="sterren"
+            >Sterren
+            <input type="radio" id="sterren" name="weergave" value="ster" />
+          </label>
+        </fieldset>
+        <label data-form="vorm"
+          >Selecteer een vorm
+          <select>
+            <button>
+              <selectedcontent></selectedcontent>
+            </button>
+            <option value="triangle">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="25,5 45,45 5,45" />
+                </svg>
+              </span>
+              <span class="option-label">Driehoek</span>
+            </option>
+            <option value="cube">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect width="40" height="40" />
+                </svg> </span
+              ><span class="option-label">Vierkant</span>
+            </option>
+            <option value="pentagon">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="25,5 45,20 37,45 13,45 5,20" />
+                </svg> </span
+              ><span class="option-label">Vijfhoek</span>
+            </option>
+            <option value="hexagon">
+              <span class="icon" aria-hidden="true"
+                ><svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon points="25,5 45,15 45,35 25,45 5,35 5,15" />
+                </svg>
+              </span>
+              <span class="option-label">Zeshoek</span>
+            </option>
+          </select>
+        </label>
+        <label data-form="ster"
+          >Hoeveel punten moet de ster hebben?
+          <select>
+            <button>
+              <selectedcontent></selectedcontent>
+            </button>
+            <option value="star4">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="25,2 30,20 48,25 30,30 25,48 20,30 2,25 20,20"
+                  />
+                </svg>
+              </span>
+              <span class="option-label">4 punten</span>
+            </option>
+            <option value="star5">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="25,2 31,18 48,18 34,28 39,45 25,35 11,45 16,28 2,18 19,18"
+                  />
+                </svg>
+              </span>
+              <span class="option-label">5 punten</span>
+            </option>
+            <option value="star7">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="
+                      25,2 29,14 42,7 
+                      35,19 48,25 
+                      35,31 42,43 
+                      29,36 25,48 
+                      21,36 8,43 
+                      15,31 2,25 
+                      15,19 8,7 21,14
+                    "
+                  /></svg></span
+              ><span class="option-label">7 punten</span>
+            </option>
+            <option value="star10">
+              <span class="icon" aria-hidden="true">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <polygon
+                    points="
+                    25.00,2.50
+                    21.91,15.49
+                    11.78,6.79
+                    16.91,19.12
+                    3.60,18.05
+                    15.00,25.00
+                    3.60,31.96
+                    16.91,30.88
+                    11.78,43.21
+                    21.91,34.51
+                    25.00,47.50
+                    28.09,34.51
+                    38.23,43.21
+                    33.09,30.88
+                    46.40,31.96
+                    35.00,25.00
+                    46.40,18.05
+                    33.09,19.12
+                    38.23,6.79
+                    28.09,15.49
+                    "
+                  />
+                </svg>
+              </span>
+              <span class="option-label">10 punten</span>
+            </option>
+          </select>
+        </label>
+      </form>
+    </header>
+    <!-- Het 'canvas' waar de vormen en sterren getekend worden -->
+    <main>
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 50 50"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <polygon points="25,5 45,45 5,45" />
+      </svg>
+      <div class="overlay"></div>
+    </main>
+    <!-- Het blok waarin de preview van de vorm getoond wordt -->
+    <section>
+      <h2>Preview</h2>
+      <p>0 vingers opgestoken</p>
+      <p>Geen vorm</p>
+      <p>Maak een vuist om te bevestigen</p>
+    </section>
+    <a href="gebaren.zip" download>Download de opdracht hier</a>
+  </body>
+</html>

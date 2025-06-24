@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Laag_1" data-name="Laag 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 351.88 591.32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1d1d1b;
+        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-size: 12px;
+      }
+
+      .cls-2 {
+        letter-spacing: 0em;
+      }
+
+      .cls-3 {
+        letter-spacing: 0em;
+      }
+
+      .cls-4 {
+        letter-spacing: -.01em;
+      }
+
+      .cls-5 {
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+      }
+    </style>
+  </defs>
+  <polygon class="cls-5" points="50.58 72.74 7.28 147.74 93.88 147.74 50.58 72.74"/>
+  <rect class="cls-5" x="15.22" y="203.44" width="70.71" height="70.71"/>
+  <polygon class="cls-5" points="50.58 310.46 3.02 345.01 21.19 400.91 79.97 400.91 98.13 345.01 50.58 310.46"/>
+  <polygon class="cls-5" points="75.58 446.1 25.58 446.1 .58 489.4 25.58 532.71 75.58 532.71 100.58 489.4 75.58 446.1"/>
+  <polygon class="cls-5" points="302.79 91.14 338.14 74.88 321.89 110.24 338.14 145.59 302.79 129.34 267.43 145.59 283.69 110.24 267.43 74.88 302.79 91.14"/>
+  <polygon class="cls-5" points="302.79 218.56 332.18 197.21 320.95 231.75 350.34 253.11 314.01 253.11 302.79 287.66 291.56 253.11 255.23 253.11 284.62 231.75 273.4 197.21 302.79 218.56"/>
+  <polygon class="cls-5" points="293.14 363.74 314.83 337.79 308.07 370.93 341.88 371.71 311.76 387.09 332.23 414.02 301.42 400.05 293.14 432.84 284.85 400.05 254.05 414.02 274.52 387.09 244.39 371.71 278.21 370.93 271.44 337.79 293.14 363.74"/>
+  <polygon class="cls-5" points="287 522.06 302.45 493.61 298.22 525.71 327.45 511.77 305.16 535.26 337 541.16 305.16 547.06 327.45 570.55 298.22 556.61 302.45 588.71 287 560.26 271.55 588.71 275.77 556.61 246.55 570.55 268.83 547.06 237 541.16 268.83 535.26 246.55 511.77 275.77 525.71 271.55 493.61 287 522.06"/>
+  <text class="cls-1" transform="translate(15.22 15.85)"><tspan class="cls-4" x="0" y="0">v</tspan><tspan class="cls-2" x="5.65" y="0">eelhoek</tspan></text>
+  <text class="cls-1" transform="translate(283.03 10.04)"><tspan x="0" y="0">s</tspan><tspan class="cls-3" x="4.75" y="0">t</tspan><tspan class="cls-2" x="8.65" y="0">er</tspan></text>
+</svg>

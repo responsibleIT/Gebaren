@@ -1,0 +1,45 @@
+/* 
+  Welkom! Dit zijn de waarden die je kunt aanpassen om je ervaring aan te passen.
+  Voel je vrij om met deze waarden te experimenteren en te zien wat er gebeurt!
+*/
+
+:root {
+  /* Lettertypen - Welke tekststijl te gebruiken */
+  --primary-regular: spaceReg;
+  --primary-bold: spaceBol;
+  --secondary: pSans;
+
+  /* Kleuren - Probeer deze RGB-waarden te veranderen! */
+  --blue: rgb(4, 4, 66);
+  --green: rgb(103, 234, 195);
+  --purple: rgb(165, 118, 244);
+  --white: rgb(255, 255, 255);
+
+  /* Afstanden - Maak dingen groter of kleiner */
+  --spacing-xs: 1rem;    /* = 16px */
+  --spacing-sm: 1.5rem;  /* = 24px */
+  --spacing-md: 2rem;    /* = 32px */
+  --spacing-lg: 3rem;    /* = 48px */
+
+  /* Hoeken - Maak ze ronder of hoekiger */
+  --border-radius: 0.25rem;
+
+  /* Animatiesnelheden - Maak dingen sneller of langzamer */
+  --transition-speed: 0.5s;
+  --animation-speed: 2s;
+
+  /* Beginpositie en grootte van je vorm */
+  --initial-x: 0px;
+  --initial-y: 0px;
+  --initial-scale: 1;
+  --initial-rotate: 0deg;
+
+  /* Zoomlimieten - Hoe ver je kunt in- en uitzoomen */
+  --min-zoom: 0.5;
+  --max-zoom: 2;
+
+  /* Bewegingssnelheid - Hoe snel dingen bewegen */
+  --position-speed: 0.15;  /* Lager = vloeiender maar langzamer */
+  --zoom-speed: 0.1;      /* Lager = vloeiender maar langzamer */
+  --rotation-speed: 0.1;   /* Lager = vloeiender maar langzamer */
+} 

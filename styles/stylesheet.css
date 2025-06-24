@@ -1,0 +1,21 @@
+/*
+  Welkom bij de stijl configuratie!
+  De onderstaande bestanden bepalen hoe je app eruit ziet:
+
+  - variables.css: Verander kleuren, groottes, snelheden en meer!
+  - animations.css: Bepaal hoe dingen bewegen en veranderen
+  - layout.css: Regelt de structuur (beter niet aanpassen)
+  - base.css: Basis stijlregels (beter niet aanpassen)
+*/
+
+/* Lettertypen importeren (worden gebruikt door andere stijlen) */
+@import "core/fonts.css";
+
+/* Basis stijlen importeren - Niet aanpassen! */
+@import "core/base.css";
+@import "core/layout.css";
+
+/* Aanpasbare stijlen importeren - Hier kun je mee spelen! */
+@import "variables.css";
+@import "animations.css";
+

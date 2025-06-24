@@ -1,0 +1,12 @@
+@font-face {
+    font-family: pSans;
+    src: url("../../assets/fonts/PublicSans.ttf");
+  }
+  @font-face {
+    font-family: spaceReg;
+    src: url("../../assets/fonts/Space-Regular.ttf");
+  }
+  @font-face {
+    font-family: spaceBol;
+    src: url("../../assets/fonts/Space-Bold.ttf");
+  }
