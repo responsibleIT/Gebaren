@@ -1,4 +1,4 @@
-# Lux - Interactieve Vormcontrole met Handgebaren
+# Gebaren - Interactieve Vormcontrole met Handgebaren
 
 Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met handgebaren via de webcam. Gebouwd met MediaPipe voor nauwkeurige handdetectie.
 
@@ -93,7 +93,7 @@ Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met ha
 ## 📁 Project Structuur
 
 ```
-Lux/
+Gebaren/
 ├── assets/
 │   ├── fonts/          # Lettertypen
 │   ├── images/         # Afbeeldingen en iconen
