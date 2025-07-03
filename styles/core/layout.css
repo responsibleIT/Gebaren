@@ -6,10 +6,10 @@ main {
   --y: var(--initial-y);
   --scale: var(--initial-scale);
   --rotate: var(--initial-rotate);
-  --shape-color: var(--green);
+  --shape-color: var(--secondary-color);
   position: relative;
   flex-grow: 1;
-  border: 0.125rem solid var(--green);
+  border: 0.125rem solid var(--secondary-color);
   overflow: hidden;
 }
 
@@ -35,8 +35,7 @@ main::before {
 
 /* Vorm positionering */
 main svg {
-  transform: translate(var(--x), var(--y)) 
-    scale(var(--scale))
+  transform: translate(var(--x), var(--y)) scale(var(--scale))
     rotate(var(--rotate));
   position: absolute;
   top: 0;
@@ -47,15 +46,15 @@ main svg {
 
 /* Formulier layout */
 form {
-  background: var(--purple);
+  background: var(--tertiary-color);
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-sm);
   margin: 0 auto;
   padding: var(--spacing-md) var(--spacing-xs);
   border-radius: var(--border-radius);
-  height: 12.5rem;
-  color: var(--blue);
+  height: 12.75rem;
+  color: var(--primary-color);
 }
 
 form > label {
@@ -67,21 +66,76 @@ form > fieldset {
   font-size: 1.25rem;
 }
 
+legend {
+  margin-bottom: var(--spacing-xs);
+}
+
+label > select {
+  margin-top: var(--spacing-xs);
+}
+
 fieldset label {
   font-size: initial;
+}
+
+div.hidden-palettes {
+  display: none;
+}
+
+.palette-switcher {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: end;
+}
+
+.palette-switcher a {
+  height: fit-content;
+  color: var(--tertiary-color);
+  background: var(--primary-color);
+  border: 0.125rem solid var(--primary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: var(--border-radius);
+}
+
+/* Palette link previews - each link shows its palette colors */
+a[href="#palet1"] {
+  color: var(--palet-1-tertiary);
+  background: var(--palet-1-primary);
+  border-color: var(--palet-1-secondary);
+}
+
+a[href="#palet2"] {
+  color: var(--palet-2-tertiary);
+  background: var(--palet-2-primary);
+  border-color: var(--palet-2-secondary);
+}
+
+a[href="#palet3"] {
+  color: var(--palet-3-tertiary);
+  background: var(--palet-3-primary);
+  border-color: var(--palet-3-secondary);
+}
+
+form > .palette-switcher {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: end;
+  flex-basis: 100%;
 }
 
 /* Voorbeeldweergave sectie */
 section {
   position: fixed;
-  top: var(--spacing-xs);
-  right: var(--spacing-xs);
-  background: var(--blue);
+  top: 1rem;
+  right: 1rem;
+  background: var(--primary-color);
   padding: var(--spacing-xs);
-  border: 0.125rem solid var(--green);
+  border: 0.125rem solid var(--secondary-color);
   border-radius: var(--border-radius);
-  color: var(--green);
-  font-family: var(--primary-regular);
+  color: var(--secondary-color);
+  font-family: var(--primary-text-regular);
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -107,7 +161,7 @@ section p {
 
 section p:last-child {
   margin-top: 0.5rem;
-  font-family: var(--primary-bold);
+  font-family: var(--primary-text-bold);
   font-size: var(--spacing-xs);
 }
 
@@ -123,7 +177,7 @@ section p:last-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--quaternary-color);
   font-size: 1.2rem;
   opacity: 1;
   visibility: visible;
@@ -135,14 +189,13 @@ section p:last-child {
 }
 
 .overlay::after {
-  content: "Bouw je wereld...";
+  content: "Aan het bouwen...";
 }
 
-/* Hulpklassen */
 video,
 canvas {
   position: fixed;
   top: 0;
   right: 0;
-  height: 6rem;
-} 
+  height: 0rem;
+}

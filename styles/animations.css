@@ -23,13 +23,13 @@
 
   @keyframes pulse {
     0% {
-      background: var(--blue);
+      background: var(--primary-color);
     }
     50% {
-      background: rgb(111, 111, 244);
+      background: var(--secondary-color);
     }
     100% {
-      background: var(--blue);
+      background: var(--primary-color);
     }
   }
 

@@ -1,0 +1,86 @@
+/* 
+  Welkom! Dit zijn de waarden die je kunt aanpassen om je ervaring aan te passen.
+  Voel je vrij om met deze waarden te experimenteren en te zien wat er gebeurt!
+*/
+body {
+  /* Lettertypen - Welke tekststijl te gebruiken */
+  /* Deze staan in assets/fonts/ */
+  --primary-text-regular: spaceReg;
+  --primary-text-bold: spaceBol;
+  --secondary-text: pSans;
+
+  /* Afstanden - Maak afstanden tussen dingen groter of kleiner */
+  /* 1rem = 16px */
+  --spacing-xs: 1rem;
+  --spacing-sm: 1.5rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+
+
+  /* Kleuren - Probeer deze te veranderen! */
+
+  /* Deze zijn gegroupeerd per thema */
+
+  --palet-1-primary: #040442;
+  --palet-1-secondary: #67eac3;
+  --palet-1-tertiary: #a576f4;
+  --palet-1-quaternary: #ffffff;
+
+  --palet-2-primary: #1a1a2e;
+  --palet-2-secondary: #e94560;
+  --palet-2-tertiary: #f39c12;
+  --palet-2-quaternary: #eee;
+
+  --palet-3-primary: #432c19;
+  --palet-3-secondary: #dceb6c;
+  --palet-3-tertiary: #47ada3;
+  --palet-3-quaternary: #eee;
+
+  /* Hoeken - Maak ze ronder of hoekiger */
+  --border-radius: 0.25rem;
+
+  /* Animatiesnelheden - Maak dingen sneller of langzamer */
+  --transition-speed: 0.5s;
+  --animation-speed: 2s;
+
+  /* Beginpositie en grootte van je vorm */
+  --initial-x: 0px;
+  --initial-y: 0px;
+  --initial-scale: 1;
+  --initial-rotate: 0deg;
+
+  /* Zoomlimieten - Hoe ver je kunt in- en uitzoomen */
+  --min-zoom: 0.5;
+  --max-zoom: 2;
+
+  /* Bewegingssnelheid - Hoe snel dingen bewegen */
+  --position-speed: 0.15; /* Lager = vloeiender maar langzamer */
+  --zoom-speed: 0.1; /* Lager = vloeiender maar langzamer */
+  --rotation-speed: 0.1; /* Lager = vloeiender maar langzamer */
+}
+
+/* Kleuren - palet 1 */
+body {
+  --primary-color: var(--palet-1-primary);
+  --secondary-color: var(--palet-1-secondary);
+  --tertiary-color: var(--palet-1-tertiary);
+  --quaternary-color: var(--palet-1-quaternary);
+}
+
+/* Kleuren - palet 2 */
+body:has(#palet2:target),
+body[data-palette="palet2"] {
+  --primary-color: var(--palet-2-primary);
+  --secondary-color: var(--palet-2-secondary);
+  --tertiary-color: var(--palet-2-tertiary);
+  --quaternary-color: var(--palet-2-quaternary);
+}
+
+/* Kleuren - palet 3 */
+body:has(#palet3:target),
+body[data-palette="palet3"] {
+  --primary-color: var(--palet-3-primary);
+  --secondary-color: var(--palet-3-secondary);
+  --tertiary-color: var(--palet-3-tertiary);
+  --quaternary-color: var(--palet-3-quaternary);
+}

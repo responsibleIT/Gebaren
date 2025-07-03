@@ -21,9 +21,9 @@ body {
   display: flex;
   flex-direction: column;
   padding: clamp(var(--spacing-xs), 3vw, var(--spacing-lg));
-  background: var(--blue);
-  font-family: var(--secondary);
-  color: var(--green);
+  background: var(--primary-color);
+  font-family: var(--secondary-text);
+  color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-xs);
@@ -31,11 +31,11 @@ body {
 
 /* Typografie */
 h1, h2, h3 {
-  font-family: var(--primary-bold);
+  font-family: var(--primary-text-bold);
 }
 
 h4, h5, h6 {
-  font-family: var(--primary-regular);
+  font-family: var(--primary-text-regular);
 }
 
 /* Formulier elementen */
@@ -48,9 +48,10 @@ select {
   padding: 0.75rem 1.25rem;
   display: flex;
   align-items: center;
-  background: var(--green);
-  color: var(--blue);
-  border: var(--blue) 0.125rem solid;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: var(--primary-color) 0.125rem solid;
+  height: 3.75rem;
 }
 
 /* SVG stijlen */
@@ -74,28 +75,28 @@ selectedContent {
   gap: .5rem;
 }
 
-selectedContent svg {
-  height: 3rem;
+select svg {
+  height: 2rem;
   aspect-ratio: 1/1;
-  fill: var(--blue);
+  fill: var(--primary-color);
 }
 
 a[download] {
-  background: var(--green);
-  color: var(--blue);
+  background: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: underline;
   display: inline;
   width: fit-content;
   padding: .5rem;
-  border: 2px solid transparent;
+  border: .125rem solid transparent;
   transition: 0.2s ease;
 }
 
 a[download]:hover {
-  color: var(--green);
-  background: var(--blue);
+  color: var(--secondary-color);
+  background: var(--primary-color);
   text-decoration: underline;
-  border: 2px solid var(--white);
+  border: .125rem solid var(--quaternary-color);
 }
 
 /* Media queries */
