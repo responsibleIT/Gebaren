@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/stylesheet.css" />
     <link rel="icon" href="assets/images/lux.png" />
+    <script src="scripts/paletteChanger.js" defer></script>
     <script type="module" src="scripts/gestureControl.js"></script>
     <script type="module" src="scripts/nonGestureControl.js"></script>
-    <title>Lux</title>
+    <title>Gebaren</title>
   </head>
   <body>
-    <h1>Lux</h1>
+    <!-- Target elements for palette switching -->
+    <div class="hidden-palettes">
+      <div id="palet1"></div>
+      <div id="palet2"></div>
+      <div id="palet3"></div>
+    </div>
+    <h1>Gebaren</h1>
     <header>
       <!-- Formulier voor vormen en sterren -->
       <form>
@@ -179,6 +186,11 @@
             </option>
           </select>
         </label>
+        <div class="palette-switcher">
+          <a href="#palet1">Thema 1</a>
+          <a href="#palet2">Thema 2</a>
+          <a href="#palet3">Thema 3</a>
+        </div>
       </form>
     </header>
     <!-- Het 'canvas' waar de vormen en sterren getekend worden -->
