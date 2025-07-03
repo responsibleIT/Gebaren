@@ -8,6 +8,7 @@
   border: unset;
   list-style: none;
   line-height: 1;
+  transition: color .3s ease-out, background-color .3s ease-out;
 }
 
 html,
