@@ -2,6 +2,14 @@
 
 Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met handgebaren via de webcam. Gebouwd met MediaPipe voor nauwkeurige handdetectie.
 
+## Opdrachten - voor de studenten
+
+- [ ] Lees de onderstaande documentatie goed door
+- [ ] Speel met de gebaren
+- [ ] Creeër 3 (originele & leuke!) thema's met behulp van; [adobe](https://color.adobe.com/create/color-wheel) & [realtime](https://www.realtimecolors.com)
+- [ ] Pas waardes aan in CSS & JS
+  - [ ] Sloop de site 🔨
+
 ## 🚀 Functies
 
 - **Real-time handdetectie** met MediaPipe
