@@ -1,19 +1,3 @@
-import {
-  onGestureChange,
-  onHandMove,
-  onPinchAmountChange,
-  onShapeSelection,
-  onFingerCountChange,
-  getScalingSession,
-  switchShapeMode,
-  onHandRotation,
-  normalizeRotation,
-} from "./gestureControl.js";
-
-
-
-
-
 // Waardes die je aan mag passen, dit heeft allemaal invloed op de vormen en sterren
 
 // Start positie van de vormen en sterren
@@ -51,8 +35,17 @@ const boundary = 0.9;
 
 
 
-
-
+import {
+  onGestureChange,
+  onHandMove,
+  onPinchAmountChange,
+  onShapeSelection,
+  onFingerCountChange,
+  getScalingSession,
+  switchShapeMode,
+  onHandRotation,
+  normalizeRotation,
+} from "./gestureControl.js";
 
 // Lerping variables
 let targetPos = { x: 0, y: 0 };
