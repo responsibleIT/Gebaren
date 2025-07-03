@@ -82,7 +82,7 @@ Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met ha
 ### Ondersteunde Browsers
 - ✅ Chrome (aanbevolen)
 - ✅ Firefox
-- ❓ Edge
+- ✅ Edge
 
 ### Prestatie Tips
 - **Goede verlichting**: Zorg voor voldoende licht op je handen
@@ -105,7 +105,7 @@ Gebaren/
 │   ├── core/          # Basis CSS bestanden
 │   ├── animations.css # Animaties
 │   ├── stylesheet.css # Hoofdstijlblad
-│   └── variables.css  # CSS variabelen
+│   └── pas-dit-aan.css  # CSS variabelen / waardes om mee te spelen
 ├── index.html         # Hoofdpagina
 └── README.md         # Deze documentatie
 ```
