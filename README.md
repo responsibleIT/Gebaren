@@ -2,12 +2,35 @@
 
 Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met handgebaren via de webcam. Gebouwd met MediaPipe voor nauwkeurige handdetectie.
 
-## Opdrachten - voor de studenten
+## Instructies
 
+### Voordat je begint kijk je het volgende filmpje;
+
+Visual Studio Code Editor installeren
+[https://cmda.github.io/internetstandaarden-screencasts/videos/04-editor-installeren/](https://cmda.github.io/internetstandaarden-screencasts/videos/04-editor-installeren/)
+
+### Checklist
+- [ ] Download & open [Visual Studio Code (VSC)](https://code.visualstudio.com/Download)
+- [ ] Download [dit project](https://responsibleit.github.io/Gebaren/gebaren.zip) als een zipje en pak het uit.
+- [ ] Sleep het mapje Gebaren (NIET de zip) in <ins>Visual Studio Code</ins>
+- [ ] Installeer de extensie `Live Server` vanuit de **Extensions: Marketplace** in <ins>Visual Studio Code</ins>
+- [ ] Klik (rechts-onder) op `Go Live` om het project op te starten en ga aan de slag met onderstaande opdrachten
+
+## Opdrachten
+
+Bekijk nu de volgende 2 filmpjes;
+ 
+### CSS Selectors
+ https://cmda.github.io/internetstandaarden-screencasts/videos/08-selectors/
+ 
+### CSS Kleurcodes
+https://cmda.github.io/internetstandaarden-screencasts/videos/09-kleurcodes/
+
+### Checklist
 - [ ] Lees de onderstaande documentatie goed door
 - [ ] Speel met de gebaren
 - [ ] Creeër 3 (originele & leuke!) thema's met behulp van; [adobe](https://color.adobe.com/create/color-wheel) & [realtime](https://www.realtimecolors.com)
-- [ ] Pas waardes aan in CSS & JS
+- [ ] Pas waardes aan in CSS (& Javascript)
   - [ ] Sloop de site 🔨
 
 ## 🚀 Functies
