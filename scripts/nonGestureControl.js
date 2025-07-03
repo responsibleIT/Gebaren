@@ -29,6 +29,11 @@ const minZoom = 0.5;
 // Maximale schaal van de vormen en sterren
 const maxZoom = 2;
 
+/**
+ * Wat uitleg over de term LERP
+ * https://en.wikipedia.org/wiki/Linear_interpolation
+ */
+
 // Lerping snelheid van de vormen en sterren (hoe sneller de vormen en sterren bewegen)
 const POSITION_LERP_SPEED = 0.15;
 
