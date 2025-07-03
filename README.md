@@ -33,6 +33,15 @@ https://cmda.github.io/internetstandaarden-screencasts/videos/09-kleurcodes/
 - [ ] Pas waardes aan in CSS (& Javascript)
   - [ ] Sloop de site 🔨
 
+*Bonus*
+- [ ] Verander het achtergrond plaatje naar keuze; zoek uit hoe dit moet.
+
+__tip:__ met
+
+`CMD + SHIFT + F` op mac / `CTRL + SHIFT + F` op windows
+
+Kan je door heel het project zoeken naar bepaalde woorden!
+
 ## 🚀 Functies
 
 - **Real-time handdetectie** met MediaPipe
