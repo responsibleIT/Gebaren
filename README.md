@@ -1,4 +1,4 @@
-# Gebaren - Interactieve Vormcontrole met Handgebaren
+# Gebaren - Spelen met een interactieve website
 
 Een innovatieve webapplicatie die geometrische vormen en sterren bestuurt met handgebaren via de webcam. Gebouwd met MediaPipe voor nauwkeurige handdetectie.
 
