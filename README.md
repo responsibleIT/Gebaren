@@ -127,7 +127,7 @@ Kan je door heel het project zoeken naar bepaalde woorden!
 ### Prestatie Tips
 - **Goede verlichting**: Zorg voor voldoende licht op je handen
 - **Stabiele camera**: Plaats je camera stevig voor betere detectie
-- **Handafstand**: Houd je handen 30-60cm van de camera
+- **Handafstand**: Houd je handen (ver) 30-60cm van de camera
 - **Effen achtergrond**: Gebruik een even achtergrond voor betere detectie
 
 ## 📁 Project Structuur
