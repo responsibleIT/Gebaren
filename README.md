@@ -168,4 +168,4 @@ Gebaren/
 
 ## 📄 Licentie
 
-Dit project valt onder de MIT licentie. Zie `LICENSE` voor details.
+Dit project valt onder de MIT licentie. Zie [`LICENSE`](https://github.com/responsibleIT/Gebaren/blob/main/LICENSE) voor details.
