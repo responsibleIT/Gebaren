@@ -25,7 +25,7 @@ main::before {
   top: 0;
   left: 0;
   content: "";
-  background: url("../../assets/images/galaxy.avif");
+  background: url("../../assets/images/galaxy.jpg");
   animation: scrolling 20s linear infinite;
   width: 200%;
   height: 100%;
@@ -53,7 +53,7 @@ form {
   margin: 0 auto;
   padding: var(--spacing-md) var(--spacing-xs);
   border-radius: var(--border-radius);
-  height: 12.75rem;
+  height: minmax(12.75rem, 100%);
   color: var(--primary-color);
 }
 
@@ -74,9 +74,31 @@ label > select {
   margin-top: var(--spacing-xs);
 }
 
-fieldset label {
+fieldset label, fieldset label input {
   font-size: initial;
+  cursor: pointer;
 }
+
+@supports selector(a:has(a)) {
+  fieldset label {
+    border: 0.125rem solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    padding: 0.25rem 0.5rem;
+    display: inline-flex;
+    background: transparent;
+  }
+
+  fieldset label:hover, fieldset label:has(input:checked){
+    background: var(--primary-color);
+    color: var(--tertiary-color);
+    border-color: var(--quaternary-color);
+  }
+
+  fieldset label input {
+  appearance: none;
+}
+}
+
 
 div.hidden-palettes {
   display: none;
