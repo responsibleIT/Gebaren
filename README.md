@@ -50,7 +50,7 @@ Kan je door heel het project zoeken naar bepaalde woorden!
 - **Intuïtieve bewegingsbesturing**
 - **Beste ondersteund op Chrome**
 
-## 🎮 Handgebaren Referentie
+## 🎮 Handgebaren
 
 ### 📋 Selectie Gebaren
 
