@@ -82,7 +82,7 @@ Kan je door heel het project zoeken naar bepaalde woorden!
 #### ✋ **Handbeweging**
 - **Functie**: Beweeg de vorm over het scherm
 - **Gebruik**: Beweeg je hand om de vorm te verplaatsen
-- **Tip**: Gebruik je dominante hand voor de beste resultaten
+- **Tip**: Beweeg vloeiend/langzaam voor de beste resultaten
 
 #### 🤏 **Knijpgebaar (Pinch)**
 - **Functie**: Vergroot of verklein de vorm
